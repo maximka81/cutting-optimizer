@@ -1,0 +1,32 @@
+{
+  "name": "cutting-optimizer",
+  "version": "1.0.0",
+  "description": "Оптимизатор раскроя листовых материалов: NestJS API + Next.js 15 клиент с визуализацией и печатью планов",
+  "author": "Maxim Akhmetgaleev <maxtrust@mail.ru> (https://github.com/maximka81)",
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maximka81/cutting-optimizer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maximka81/cutting-optimizer/issues"
+  },
+  "homepage": "https://github.com/maximka81/cutting-optimizer#readme",
+  "workspaces": [
+    "api",
+    "web"
+  ],
+  "scripts": {
+    "dev:api": "cd api && npm run start:dev",
+    "dev:web": "cd web && npm run dev",
+    "dev": "concurrently \"npm run dev:api\" \"npm run dev:web\"",
+    "build:api": "cd api && npm run build",
+    "build:web": "cd web && npm run build",
+    "build": "npm run build:api && npm run build:web",
+    "start": "npm run build && concurrently \"npm run start --prefix api\" \"npm run start --prefix web\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
