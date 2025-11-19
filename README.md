@@ -3,13 +3,39 @@
 Автоматизации раскроя листовых деталей в производстве. Для
 Состоит из двух связанных проектов — **backend** на NestJS и **frontend** на Next.js 15.
 
-## API
+## Скриншоты
 
-[Читать документацию API](./api/README.md)
+### Редактирование размещаемых изделий
 
-## Web
+![Редактирование размещаемых изделий](/images/screenshot-web-parts.png)
 
-[Читать документацию Web](./web/README.md)
+### Редактирование листов материалов
+
+![Редактирование листов материалов](/images/screenshot-web-materials.png)
+
+### Параметры
+
+![Параметры раскроя](/images/screenshot-web-settings.png)
+
+### Результат раскроя
+
+![Результат раскроя](/images/screenshot-web-result.png)
+
+### Визуализация схемы
+
+![Визуализация схемы раскроя](/images/screenshot-web-result-schema.png)
+
+### Интерфейс API (Swagger)
+
+![Интерфейс API (Swagger)](/images/screenshot-api-swagger.png)
+
+## Backend
+
+Описание смотрите в [README бэкэнда](./api/README.md)
+
+## Frontend
+
+Описание смотрите в [README фронтенда](./web/README.md)
 
 ## Запуск
 
